@@ -40,7 +40,7 @@
       "layer": "",
       "name": "Ground_Platform",
       "persistentUuid": "43012ad5-bfa9-462f-87ae-367455b6ddda",
-      "width": 1279,
+      "width": 3026,
       "x": 0,
       "y": 665,
       "zOrder": 1,
@@ -148,6 +148,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 414,
+      "keepRatio": true,
+      "layer": "",
+      "name": "background",
+      "persistentUuid": "f067455e-3462-426f-ab9e-f83c4067d5f6",
+      "width": 1348,
+      "x": -3,
+      "y": 185,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -155,7 +172,7 @@
       "assetStoreId": "",
       "height": 32,
       "name": "Ground_Platform",
-      "texture": "NewTiledSprite",
+      "texture": "NewTiledSprite3",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -186,6 +203,7 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
           "FireCooldown": 0.1,
@@ -216,6 +234,7 @@
           "RandomizedAngle": 0
         },
         {
+          "isFolded": true,
           "name": "Health",
           "type": "Health::Health",
           "Health": 3,
@@ -244,6 +263,7 @@
           "PercentDamageReduction": 0
         },
         {
+          "isFolded": true,
           "name": "ObjectSpawner",
           "type": "ObjectSpawner::ObjectSpawner",
           "SpawnPeriod": 1,
@@ -257,21 +277,21 @@
           "RandomPosition": false
         },
         {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
-          "canGrabWithoutMoving": true,
+          "canGrabWithoutMoving": false,
           "deceleration": 1500,
-          "gravity": 1000,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 600,
-          "jumpSustainTime": 0.2,
+          "gravity": 300,
+          "ignoreDefaultControls": true,
+          "jumpSpeed": 0,
+          "jumpSustainTime": 0,
           "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 700,
+          "maxFallingSpeed": 300,
           "maxSpeed": 250,
+          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
           "xGrabTolerance": 10,
@@ -280,17 +300,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "Idle",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "PlayerCharacter14",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -298,28 +318,293 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 25,
+                    "y": 15.5
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 10,
-                        "y": 11
+                        "x": 7,
+                        "y": 2
                       },
                       {
-                        "x": 54,
-                        "y": 11
+                        "x": 26,
+                        "y": 2
                       },
                       {
-                        "x": 54,
-                        "y": 61
+                        "x": 26,
+                        "y": 32
                       },
                       {
-                        "x": 10,
-                        "y": 61
+                        "x": 7,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "PlayerCharacter15",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 25,
+                    "y": 15.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 7,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "PlayerCharacter16",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 25,
+                    "y": 15.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 7,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gravity",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 25,
+                    "y": 15.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 7,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gravity2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 25,
+                    "y": 15.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 7,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gravity3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 25,
+                    "y": 15.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 7,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gravity4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 25,
+                    "y": 15.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 7,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gravity5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 25,
+                    "y": 15.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 2
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 7,
+                        "y": 32
                       }
                     ]
                   ]
@@ -341,17 +626,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "Enemy",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "Enemy",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -367,20 +652,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 19,
-                        "y": 10
+                        "x": 6,
+                        "y": 4
                       },
                       {
-                        "x": 46,
-                        "y": 10
+                        "x": 26,
+                        "y": 4
                       },
                       {
-                        "x": 46,
-                        "y": 64
+                        "x": 26,
+                        "y": 32
                       },
                       {
-                        "x": 19,
-                        "y": 64
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Enemy2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 4
+                      },
+                      {
+                        "x": 26,
+                        "y": 4
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Enemy3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 4
+                      },
+                      {
+                        "x": 26,
+                        "y": 4
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Enemy4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 4
+                      },
+                      {
+                        "x": 26,
+                        "y": 4
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
                       }
                     ]
                   ]
@@ -402,7 +795,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "Projectile",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -412,7 +805,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "Projectile",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -428,20 +821,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 13,
-                        "y": 25
+                        "x": 0,
+                        "y": 1
                       },
                       {
-                        "x": 49,
-                        "y": 25
+                        "x": 8,
+                        "y": 1
                       },
                       {
-                        "x": 49,
-                        "y": 33
+                        "x": 8,
+                        "y": 6
                       },
                       {
-                        "x": 13,
-                        "y": 33
+                        "x": 0,
+                        "y": 6
                       }
                     ]
                   ]
@@ -680,6 +1073,17 @@
         "HideBackground": true,
         "ShowBackground": false
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 70,
+      "name": "background",
+      "texture": "NewTiledSprite2",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -714,202 +1118,263 @@
       },
       {
         "objectName": "EnergyBar2"
+      },
+      {
+        "objectName": "background"
       }
     ]
   },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"d\""
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {
-            "value": "AddForceXY"
+            "value": "CentreCamera"
           },
           "parameters": [
+            "",
             "PlayerCharacter",
-            "200",
-            "0",
+            "",
+            "",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"a\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "AddForceXY"
-          },
-          "parameters": [
-            "PlayerCharacter",
-            "-200",
-            "0",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextJustPressed"
-          },
-          "parameters": [
-            "",
-            "\"f\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipY"
-          },
-          "parameters": [
-            "PlayerCharacter",
-            "Flippable",
-            "yes"
           ]
         },
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
           },
           "parameters": [
-            "Flipped",
-            "True",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Flipped",
-            "False",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlatformBehavior::Gravity"
-          },
-          "parameters": [
-            "PlayerCharacter",
-            "PlatformerObject",
+            "FlatHeartBar",
             "=",
-            "300"
+            "PlayerCharacter.Health::Health()",
+            ""
           ]
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Controls",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "KeyFromTextJustPressed"
-          },
-          "parameters": [
-            "",
-            "\"g\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipY"
-          },
-          "parameters": [
-            "PlayerCharacter",
-            "Flippable",
-            "no"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"d\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "PlatformerObject"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Flipped",
-            "False",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"a\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "PlatformerObject"
+              ]
+            }
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
-          "type": {
-            "value": "KeyFromTextJustPressed"
-          },
-          "parameters": [
-            "",
-            "\"e\""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Space\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Flipped",
+                "Toggle",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Flipped",
+                    "False",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Flipped",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::Gravity"
+                  },
+                  "parameters": [
+                    "PlayerCharacter",
+                    "PlatformerObject",
+                    "=",
+                    "-300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "PlayerCharacter",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Flipped",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::Gravity"
+                  },
+                  "parameters": [
+                    "PlayerCharacter",
+                    "PlatformerObject",
+                    "=",
+                    "300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "PlayerCharacter",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"e\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "FireBullet",
+                "PlayerCharacter.PointX(\"Center\")",
+                "PlayerCharacter.PointY(\"Center\")",
+                "Projectile",
+                "0",
+                "200",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::Fire"
-          },
-          "parameters": [
-            "PlayerCharacter",
-            "FireBullet",
-            "PlayerCharacter.PointX(\"0\")",
-            "PlayerCharacter.PointY(\"0\")",
-            "Projectile",
-            "0",
-            "200",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -990,77 +1455,73 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Animation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
-          },
-          "parameters": [
-            "FlatHeartBar",
-            "=",
-            "PlayerCharacter.Health::Health()",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "PlatformerObject"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "Animation",
+                "=",
+                "\"Idle\""
+              ]
+            }
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Flipped",
-            "True",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::CurrentSpeed"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "PlatformerObject",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "Animation",
+                "=",
+                "\"Walk\""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "AddForceXY"
-          },
-          "parameters": [
-            "PlayerCharacter",
-            "0",
-            "-1000",
-            "0"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Flipped",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "AddForceXY"
-          },
-          "parameters": [
-            "PlayerCharacter",
-            "0",
-            "1000",
-            "0"
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [
