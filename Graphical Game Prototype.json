@@ -190,6 +190,262 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/4158f811cf0bb821a58f98d8cb78f2257ee590210091ab56b46703e94044ee7a_Flat Heart Filled.png",
           "name": "Flat Heart Filled.png"
         }
+      },
+      {
+        "file": "assets/PlayerCharacter.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity.png\"}",
+        "name": "Gravity",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity2.png\"}",
+        "name": "Gravity2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity3.png\"}",
+        "name": "Gravity3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity4.png\"}",
+        "name": "Gravity4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity5.png\"}",
+        "name": "Gravity5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gravity6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gravity7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gravity8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Projectile.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Projectile",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlayerCharacter14.png\"}",
+        "name": "PlayerCharacter14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlayerCharacter15.png\"}",
+        "name": "PlayerCharacter15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlayerCharacter16.png\"}",
+        "name": "PlayerCharacter16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter17",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
