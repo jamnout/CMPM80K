@@ -446,6 +446,46 @@
         "name": "PlayerCharacter17",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewTiledSprite2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gravity.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gravity6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PlayerCharacter15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gravity8.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
