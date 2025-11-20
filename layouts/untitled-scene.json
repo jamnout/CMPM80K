@@ -1416,6 +1416,18 @@
                     "=",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Aylex - Fun is Fun (freetouse.com).mp3",
+                    "yes",
+                    "60",
+                    ""
+                  ]
                 }
               ]
             },
@@ -1531,6 +1543,18 @@
                     "0",
                     "50",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Jump 7 (1).wav",
+                    "",
+                    "75",
+                    "0.8"
                   ]
                 }
               ]
@@ -1713,6 +1737,18 @@
                     "-50",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Jump 7 (1).wav",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ]
             }
@@ -1745,6 +1781,18 @@
                 "0",
                 "200",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Laser_shoot 4.wav",
+                "",
+                "75",
+                "0.8"
               ]
             }
           ]
@@ -1786,6 +1834,18 @@
             "Projectile",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\Hit_hurt 3.wav",
+            "",
+            "",
+            ""
+          ]
         }
       ]
     },
@@ -1825,6 +1885,18 @@
           },
           "parameters": [
             "Spike",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\Hit_hurt 1.wav",
+            "",
+            "",
             ""
           ]
         }

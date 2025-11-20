@@ -486,6 +486,56 @@
         "name": "assets\\Gravity8.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Jump 7 (1).wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Jump 7 (1).wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Laser_shoot 4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Laser_shoot 4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit_hurt 3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Hit_hurt 3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit_hurt 1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Hit_hurt 1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Aylex - Fun is Fun (freetouse.com).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Aylex - Fun is Fun (freetouse.com).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
