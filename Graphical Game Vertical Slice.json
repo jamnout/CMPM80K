@@ -1,0 +1,585 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 245,
+    "major": 5,
+    "minor": 5,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "92a181bd-9172-4dc0-8e52-57e5508931ee",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "version": "1.0.0",
+    "name": "Graphical Game Vertical Slice",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Health Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Hud/Bar/f8e5d88f8b377f182d5d42adf0bf9bc5f94034ac24c410f07ba27c46cda841c3_Health Bar.png",
+          "name": "Health Bar.png"
+        }
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Flat Heart Empty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Heart Empty.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/c0bac0102b6467c3f428f093a162ad8aedc069b2bf3cbe65f344353c3695ecdf_Flat Heart Empty.png",
+          "name": "Flat Heart Empty.png"
+        }
+      },
+      {
+        "file": "assets/Flat Heart Filled.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Heart Filled.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/4158f811cf0bb821a58f98d8cb78f2257ee590210091ab56b46703e94044ee7a_Flat Heart Filled.png",
+          "name": "Flat Heart Filled.png"
+        }
+      },
+      {
+        "file": "assets/PlayerCharacter.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity.png\"}",
+        "name": "Gravity",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity2.png\"}",
+        "name": "Gravity2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity3.png\"}",
+        "name": "Gravity3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity4.png\"}",
+        "name": "Gravity4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Gravity5.png\"}",
+        "name": "Gravity5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gravity6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gravity7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gravity8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Projectile.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Projectile",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlayerCharacter14.png\"}",
+        "name": "PlayerCharacter14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlayerCharacter15.png\"}",
+        "name": "PlayerCharacter15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlayerCharacter16.png\"}",
+        "name": "PlayerCharacter16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerCharacter17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewTiledSprite2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gravity.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gravity6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PlayerCharacter15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravity8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gravity8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump 7 (1).wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Jump 7 (1).wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Laser_shoot 4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Laser_shoot 4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit_hurt 3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Hit_hurt 3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit_hurt 1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Hit_hurt 1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Aylex - Fun is Fun (freetouse.com).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Aylex - Fun is Fun (freetouse.com).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "8-bit-retro-game-music-233964.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8-bit-retro-game-music-233964.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectspawner"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    }
+  ],
+  "externalLayouts": []
+}
