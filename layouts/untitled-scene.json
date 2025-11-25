@@ -1185,10 +1185,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         },
         {
@@ -1254,7 +1254,7 @@
           },
           "parameters": [
             "",
-            "PlayerCharacter",
+            "Background",
             "",
             "",
             ""
@@ -1423,10 +1423,20 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\Aylex - Fun is Fun (freetouse.com).mp3",
+                    "8-bit-retro-game-music-233964.mp3",
                     "yes",
-                    "60",
+                    "50",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Physics2::SetFixedRotation"
+                  },
+                  "parameters": [
+                    "PlayerCharacter",
+                    "Physics2",
+                    "yes"
                   ]
                 }
               ]
@@ -1896,7 +1906,7 @@
             "",
             "assets\\Hit_hurt 1.wav",
             "",
-            "",
+            "100",
             ""
           ]
         }
