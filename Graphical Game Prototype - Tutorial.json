@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "Graphical Game Prototype",
+    "name": "Graphical Game Prototype - Tutorial",
     "description": "",
     "author": "",
     "windowWidth": 1280,
@@ -727,16 +727,6 @@
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite27",
         "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/8-bit-retro-game-music-233964.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/8-bit-retro-game-music-233964.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
         "userAdded": false
       }
     ]
@@ -1551,7 +1541,7 @@
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.1,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
