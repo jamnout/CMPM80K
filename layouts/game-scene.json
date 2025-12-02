@@ -90,6 +90,11 @@
       "name": "Score",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Random",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -515,7 +520,7 @@
           },
           "parameters": [
             "",
-            "Background",
+            "NewSprite2",
             "",
             "",
             ""
@@ -573,6 +578,28 @@
           "parameters": [
             "",
             "\"SpawnImmunity\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets/8-bit-retro-game-music-233964.mp3",
+            "0",
+            "yes",
+            "30",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"WaveCoolDown\""
           ]
         }
       ]
@@ -1388,6 +1415,44 @@
           "conditions": [
             {
               "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"WaveCoolDown\"",
+                ">=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EnemySpawnTimer",
+                "+",
+                "TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EnemySpawnInterval",
+                "=",
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -1567,6 +1632,47 @@
                 "+",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Random",
+                "=",
+                "Random(6)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Random",
+                    "=",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Heals",
+                    "Enemy.CenterX()",
+                    "Enemy.CenterY()",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -1630,6 +1736,68 @@
                 "Resizable",
                 "-",
                 "40"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "Heals",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Health"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "Health",
+                "<",
+                "5",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "PlayerCharacter",
+                "Health",
+                ".5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Health",
+                "Resizable",
+                "+",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Heals",
+                ""
               ]
             }
           ]
