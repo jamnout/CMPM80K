@@ -1,9 +1,9 @@
 {
   "firstLayout": "Start Scene",
   "gdVersion": {
-    "build": 248,
+    "build": 249,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -2210,6 +2210,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Heals",
+      "preScale": 1.75,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
