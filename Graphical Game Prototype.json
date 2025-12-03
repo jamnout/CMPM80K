@@ -2308,7 +2308,23 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "HighScore",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "TutorialCheck",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
