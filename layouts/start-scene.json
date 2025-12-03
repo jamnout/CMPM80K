@@ -53,8 +53,8 @@
       "name": "Title",
       "persistentUuid": "2b9a8b5f-c65a-45da-b5dc-894d15f76155",
       "width": 0,
-      "x": 452,
-      "y": 183,
+      "x": 436,
+      "y": 186,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -69,7 +69,7 @@
       "name": "Start_Button",
       "persistentUuid": "98aa1efa-2a0b-4eaa-a2de-b631fdd778c9",
       "width": 0,
-      "x": 557,
+      "x": 552,
       "y": 499,
       "zOrder": 3,
       "numberProperties": [],
@@ -274,6 +274,31 @@
             "",
             "\"Tutorial\"",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Score",
+            "=",
+            "0"
           ]
         }
       ]

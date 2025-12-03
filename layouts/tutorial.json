@@ -80,6 +80,11 @@
       "name": "Health3",
       "type": "number",
       "value": 5
+    },
+    {
+      "name": "Variable",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -1320,11 +1325,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",

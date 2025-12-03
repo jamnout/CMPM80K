@@ -82,17 +82,12 @@
       "value": 5
     },
     {
-      "name": "Score2",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "Score",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "Random",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Variable",
       "type": "number",
       "value": 0
     }
@@ -257,7 +252,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "Text",
+      "name": "ScoreText",
       "persistentUuid": "42f18c37-7918-4253-86a2-e06c32a57f49",
       "width": 0,
       "x": 266,
@@ -324,7 +319,7 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "Text",
+      "name": "ScoreText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -337,7 +332,7 @@
       ],
       "effects": [],
       "behaviors": [],
-      "string": "Goal: SURVIVE",
+      "string": "Score: 0",
       "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
       "textAlignment": "center",
       "characterSize": 35,
@@ -360,7 +355,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Goal: SURVIVE",
+        "text": "Score: 0",
         "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -499,7 +494,7 @@
         "objectName": "Ground_Platform"
       },
       {
-        "objectName": "Text"
+        "objectName": "ScoreText"
       },
       {
         "objectName": "Door"
@@ -600,6 +595,16 @@
           "parameters": [
             "",
             "\"WaveCoolDown\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Score",
+            "=",
+            "0"
           ]
         }
       ]
@@ -1642,6 +1647,27 @@
                 "=",
                 "Random(6)"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ScoreText",
+                "Text",
+                "=",
+                "\"Score: \" + Score"
+              ]
             }
           ],
           "events": [
@@ -1776,19 +1802,8 @@
               "parameters": [
                 "PlayerCharacter",
                 "Health",
-                ".5",
+                "1.25",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetWidth"
-              },
-              "parameters": [
-                "Health",
-                "Resizable",
-                "+",
-                "20"
               ]
             },
             {
@@ -1798,6 +1813,64 @@
               "parameters": [
                 "Heals",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Health.Width()",
+                    ">=",
+                    "150"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                  },
+                  "parameters": [
+                    "Health",
+                    "Resizable",
+                    "=",
+                    "200"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Health.Width()",
+                    "<",
+                    "150"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                  },
+                  "parameters": [
+                    "Health",
+                    "Resizable",
+                    "+",
+                    "50"
+                  ]
+                }
               ]
             }
           ]
@@ -1995,6 +2068,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [

@@ -50,7 +50,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "NewText",
+      "name": "Score2",
       "persistentUuid": "7fdf30a0-b894-4edc-83bb-698dca568a14",
       "width": 0,
       "x": 436,
@@ -66,12 +66,28 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "NewText2",
+      "name": "Retry",
       "persistentUuid": "c392658c-a548-4cfb-acbf-331260ba90eb",
       "width": 0,
-      "x": 560,
+      "x": 436,
       "y": 475,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "HiScore",
+      "persistentUuid": "60402534-544a-405e-a155-c1d710f8fb69",
+      "width": 0,
+      "x": 436,
+      "y": 298,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -143,14 +159,14 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "NewText",
+      "name": "Score2",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Invasion Failed",
+      "string": "Final Score: ",
       "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
       "textAlignment": "center",
       "characterSize": 50,
@@ -173,7 +189,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Invasion Failed",
+        "text": "Final Score: ",
         "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -186,7 +202,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "NewText2",
+      "name": "Retry",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -219,6 +235,49 @@
         "text": "Retry?",
         "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
         "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 50,
+        "lineHeight": 0,
+        "color": "255;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "HiScore",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "High Score: ",
+      "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "High Score: ",
+        "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
         "characterSize": 50,
         "lineHeight": 0,
@@ -233,10 +292,13 @@
         "objectName": "Black"
       },
       {
-        "objectName": "NewText"
+        "objectName": "Score2"
       },
       {
-        "objectName": "NewText2"
+        "objectName": "HiScore"
+      },
+      {
+        "objectName": "Retry"
       }
     ]
   },
@@ -249,7 +311,7 @@
             "value": "SourisSurObjet"
           },
           "parameters": [
-            "NewText2",
+            "Retry",
             "",
             "",
             ""
@@ -274,6 +336,61 @@
             "",
             "\"Game Scene\"",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "Variable(Score)",
+            ">=",
+            "Variable(HighScore)"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "HighScore",
+            "=",
+            "GlobalVariable(Score)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Score2",
+            "Text",
+            "=",
+            "\"Final Score: \" + Score"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "HiScore",
+            "Text",
+            "=",
+            "\"High Score: \" + HighScore"
           ]
         }
       ]
