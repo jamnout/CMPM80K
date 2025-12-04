@@ -1,9 +1,9 @@
 {
   "firstLayout": "Start Scene",
   "gdVersion": {
-    "build": 249,
+    "build": 246,
     "major": 5,
-    "minor": 6,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -1725,7 +1725,13 @@
       "name": "Enemy2",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 5
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [

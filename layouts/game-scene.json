@@ -90,6 +90,26 @@
       "name": "Variable",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "BossSpawned",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "BossHealth",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "BossSpawnSide",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "BossSpawnTimer",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -605,6 +625,25 @@
             "Score",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "BossSpawned",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "BossSpawnTimer"
           ]
         }
       ]
@@ -1871,6 +1910,240 @@
                     "50"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "BossSpawnTimer",
+                "BossSpawnTimer",
+                ">",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "BossSpawned",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "BossSpawned",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "BossSpawned",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy2",
+                "-200",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Enemy2",
+                "Scale",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "BossSpawned",
+                "=",
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Projectile",
+                "Enemy2",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Projectile",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy2",
+                "Health",
+                "-",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy2",
+                "Health",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Enemies_Killed",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "BossSpawned",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Heals",
+                "Enemy2.CenterX()",
+                "Enemy2.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Heals",
+                "Enemy2.CenterX() + 10",
+                "Enemy2.CenterY() + 10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "BossSpawnTimer"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "Enemy2",
+                "PlayerCharacter",
+                "50",
+                ""
               ]
             }
           ]
