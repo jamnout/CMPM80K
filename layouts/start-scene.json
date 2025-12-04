@@ -75,6 +75,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "credits",
+      "persistentUuid": "ebe46694-d606-4270-89ae-7212d60ce6e9",
+      "width": 0,
+      "x": 304,
+      "y": 243,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -224,6 +240,49 @@
         "lineHeight": 0,
         "color": "255;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "credits",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Sprites and SFX by Tate\nRoyalty-Free BGM courtesy of moodmode\nGame Implementation by Adam, Tate, and Umayr",
+      "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
+      "textAlignment": "center",
+      "characterSize": 25,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Sprites and SFX by Tate\nRoyalty-Free BGM courtesy of moodmode\nGame Implementation by Adam, Tate, and Umayr",
+        "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 25,
+        "lineHeight": 0,
+        "color": "255;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -234,6 +293,9 @@
       },
       {
         "objectName": "Title"
+      },
+      {
+        "objectName": "credits"
       },
       {
         "objectName": "Start_Button"
